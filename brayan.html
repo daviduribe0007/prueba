@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="brayan.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+          <li class="logo">Brayan</li>
+          <li class="items"><a href="#">Home</a></li>
+          <li class="items"><a href="#">About</a></li>
+          <li class="items"><a href="#">Blogs</a></li>
+          <li class="items"><a href="#">Contact</a></li>
+          <li class="items"><a href="#">Feedback</a></li>
+          <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+  
+      <script>
+        $(document).ready(function(){
+          $('.btn').click(function(){
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+          });
+        });
+      </script>
+
+</body>
+</html>
